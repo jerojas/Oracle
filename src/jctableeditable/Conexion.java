@@ -69,13 +69,14 @@ public class Conexion {
     
     
 
-    public void ejecutarDML(String sql) {
+    public ResultSet ejecutarDML(String sql) {
 
         try {
             sentencia.executeUpdate(sql);
         } catch (SQLException ex) {
             ex.printStackTrace();
         }
+        return null;
     }
 
 
